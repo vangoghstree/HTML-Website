@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIM System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header, .footer {
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 10px 0;
+        }
+        .nav {
+            background-color: #333;
+        }
+        .nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        .nav ul li a:hover {
+            background-color: #575757;
+        }
+        .content {
+            padding: 20px;
+        }
+        .input-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .input-form label, .input-form input, .input-form textarea {
+            margin-bottom: 10px;
+        }
+        .input-form input, .input-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .input-form button {
+            padding: 10px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .input-form button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="Logo" style="width: 100px;">
+            <h1>SIM System</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#appointments">Appointments</a></li>
+                <li><a href="#technicians">Technicians</a></li>
+                <li><a href="#parts">Parts Inventory</a></li>
+                <li><a href="#reports">Reports</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </div>
+        <div class="content" id="home">
+            <h2>Welcome to the SIM System</h2>
+            <p>This is the main menu screen.</p>
+        </div>
+        <div class="content" id="appointments">
+            <h2>Schedule Appointment</h2>
+            <form class="input-form">
+                <label for="customer-name">Customer Name:</label>
+                <input type="text" id="customer-name" name="customer-name" required>
+                
+                <label for="appointment-date">Appointment Date:</label>
+                <input type="date" id="appointment-date" name="appointment-date" required>
+                
+                <label for="appointment-time">Appointment Time:</label>
+                <input type="time" id="appointment-time" name="appointment-time" required>
+                
+                <label for="technician">Technician:</label>
+                <input type="text" id="technician" name="technician" required>
+                
+                <button type="submit">Schedule</button>
+            </form>
+        </div>
+        <div class="content" id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, please reach out to us via email or phone.</p>
+            <p>Email: support@appliancewarehouse.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="content" id="about">
+            <h2>About Us</h2>
+            <p>Welcome to the Service Information Management (SIM) system. Our goal is to provide seamless service management for your appliances.</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Appliance Warehouse</p>
+        </div>
+    </div>
+</body>
+</html>
